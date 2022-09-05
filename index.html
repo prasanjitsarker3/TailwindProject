@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailWind</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&family=PT+Serif:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: "#FEC02",
+                        offBlack: "#131313",
+                        gray: "4E4E4E",
+                    },
+                    fontFamily: {
+                        babas: ["Bebas Neue", "cursive"],
+                        montserrat: ["Montserrat", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <main class="">
+        <nav
+            class="flex justify-between px-6 md:px-24 lg:px-52 pt-4 h-20 bg-white justify-center align-center font-bold font-babas absolute w-full">
+            <h1 class="text-3xl">TailWind</h1>
+            <ul class="flex gap-3 text-lg">
+                <li>About us</li>
+                <li>Our Movies</li>
+                <li>Services</li>
+
+            </ul>
+        </nav>
+        <!-- Landing Section -->
+        <section class="bg-[url('./images/banner.jpg')] bg-cover h-screen  pt-20 flex items-center">
+            <div class="ml-20 font-babas">
+                <p class="uppercase font-bold ">Movie Production Studio</p>
+                <h1>Films Made To Perfection</h1>
+                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, ad eius. Illo?</p>
+                <button class="mt-5 text-xl text-white border-2 py-3 px-5">Discover More</button>
+            </div>
+
+        </section>
+        <section class="m-20 border-2">
+            <div class="lg:flex ">
+                <div
+                    class="bg-[url('./images/camera-man.jpg')] bg-cover bg-center h-[300px] md:h-[500px] lg:w-2/4 m-10  flex justify-center items-end">
+                    <!-- <img class="bg-cover" src="images/camera-man.jpg" alt="" srcset=""> -->
+                    <h1 class="bg-white p-5 rounded  -mb-8">23 Years Experience</h1>
+                </div>
+                <div class="lg:w-2/4 m-10 ">
+                    <p class="uppercase font-bold ">Movie Production Studio</p>
+                    <h1>Films Made To Perfection</h1>
+                    <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, ad eius. Illo?</p>
+                    <button class="mt-5 text-xl font-babas text-black border-2 py-3 px-5">Discover More</button>
+                </div>
+            </div>
+        </section>
+        <!-- Movies Section -->
+
+        <section class="bg-slate-500 h-full p-10 container mx-auto">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
+                <div class="p-5 border-2 border-white h-[300px] md:h-[500px] lg:h-[350px]">
+                    <div class="bg-[url('./images/inception.jpg')] w-full h-full bg-cover bg-center"></div>
+                </div>
+                <div class="p-5 border-2 border-white h-[300px] md:h-[500px] lg:h-[350px]">
+                    <div class="bg-[url('./images/fractured.jpg')] w-full h-full bg-cover bg-center"></div>
+                </div>
+                <div class="p-5 border-2 border-white h-[300px] md:h-[500px] lg:h-[350px]">
+                    <div class="bg-[url('./images/interstellar.jpg')] w-full h-full bg-cover bg-center"></div>
+                </div>
+                <div class="p-5 border-2 border-white h-[300px] md:h-[500px] lg:h-[350px]">
+                    <div class="bg-[url('./images/tenet.jpg')] w-full h-full bg-cover bg-center"></div>
+                </div>
+              
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
